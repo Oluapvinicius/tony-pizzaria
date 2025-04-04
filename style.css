@@ -1,3 +1,7 @@
+:root{
+    --primary-color: #f07807;
+    --segundary-color: #f7e5d8;
+}
 *{
     padding: 0;
     margin: 0;
@@ -12,21 +16,54 @@ ul,ol,li{
 }
 body{
     padding: 0 80px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--segundary-color);
 }
 
 header{
     position: fixed;
-    background-color: tomato;
+    background-color: var(--segundary-color);
     height: 60px;
     width: calc(100% - 160px);
     top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header button{
+    height: 48px;
+    width: 120px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px #0005;
+    display: flex;
+    background-color: var(--segundary-color);
+
+
+
+
+}
+header menu{
+    display: flex;
+    align-items:   center;
+    background-color: inherit;
+    gap: 48px;
+
+}
+header li{
+    padding: 4px 8px;
+    transition: 1s;
+}
+header li:hover{
+    background-color: var(--segundary-color);
+    box-shadow: 0 4px 8px #0005;
 }
 main{
     height: 700px;
-    background-color: lightcyan;
+    background-color: var(--segundary-color);
 }
 footer{
     width: 100%;
     background-color: pink;
-    height: 1526px;
+    height: 526px;
 }
